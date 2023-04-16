@@ -4,25 +4,25 @@ import { Link, useParams } from 'react-router-dom'
 
 export default function ViewVisit() {
 
-    const [visit, setVisit]=useState({
+    const [visit, setVisit] = useState({
         visitDate: "",
-        visitSymptoms:"",
-        testResults:"",
-        visitNumber:"",
+        visitSymptoms: "",
+        testResults: "",
+        visitNumber: "",
         patient_PatientCode: "",
-        drug_DrugCode:"",
-        diagnosis_DiagnosisCode:"",
-        doctor_DoctorCode:""
+        drug_DrugCode: "",
+        diagnosis_DiagnosisCode: "",
+        doctor_DoctorCode: ""
     })
 
-    const {id}=useParams()
+    const { id } = useParams()
 
-    useEffect(()=>{
+    useEffect(() => {
         loadVisit()
-    },[])
+    }, [])
 
-    const loadVisit=async()=>{
-        const result=await axios.get(`http://localhost:8090/visit/${id}`)
+    const loadVisit = async () => {
+        const result = await axios.get(`http://localhost:8090/visit/${id}`)
         setVisit(result.data)
     }
 
@@ -40,14 +40,14 @@ export default function ViewVisit() {
                                         {visit.visitCode}
                                     </li>
                                     <li className='list-group-item'>
-                                        <b>Питомец ID </b>
+                                        <b>ID питомца </b>
                                         {visit.patient_PatientCode.patientCode} <br></br>
                                         Кличка: {visit.patient_PatientCode.patientName} <br></br>
                                         Пол: {visit.patient_PatientCode.patientSex} <br></br>
                                         Дата рождения: {visit.patient_PatientCode.patientBirthday} <br></br>
                                         Номер карты: {visit.patient_PatientCode.patientCardNumber} <br></br>
-                                        Категория животного: 
-                                        {/* {visit.patient_PatientCode.animalAnimalCategory.animalCategoryName} */} <br></br>
+                                        Категория животного:
+                                        {/* {visit.patient_PatientCode.animalAnimalCategory.animalCategoryName}*/} <br></br>
                                         Порода: {visit.patient_PatientCode.patientBreed} <br></br>
                                     </li>
                                     <li className='list-group-item'>
@@ -76,7 +76,7 @@ export default function ViewVisit() {
                                     </li>
                                     <li className='list-group-item'>
                                         <b>Врач</b> <br></br>
-                                        {visit.doctor_DoctorCode.doctorSurname} {visit.doctor_DoctorCode.doctorName} 
+                                        {visit.doctor_DoctorCode.doctorSurname} {visit.doctor_DoctorCode.doctorName}
                                     </li>
                                 </ul>
                             </div>

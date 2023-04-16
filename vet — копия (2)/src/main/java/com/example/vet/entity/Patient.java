@@ -37,6 +37,32 @@ public class Patient {
     @JoinColumn(name = "animal_animal_category")
     private Animal AnimalAnimalCategory;
 
+    public int getPatientCode() {
+        return PatientCode;
+    }
+    public void setPatientCode(int PatientCode) { this.PatientCode = PatientCode; }
+
+    public String getPatientName() { return PatientName; }
+    public void  setPatientName(String PatientName) { this.PatientName = PatientName;}
+
+    public String getPatientBirthday() {return  PatientBirthday;}
+    public void setPatientBirthday(String PatientBirthday) {this.PatientBirthday = PatientBirthday;}
+
+    public int getPatientCardNumber() { return PatientCardNumber;}
+    public void setPatientCardNumber(int PatientCardNumber) {this.PatientCardNumber = PatientCardNumber;}
+
+    public String getPatientBreed() {return PatientBreed;}
+    public void setPatientBreed (String PatientBreed) {this.PatientBreed = PatientBreed;}
+
+    public String getPatientSex() {return PatientSex;}
+    public void setPatientSex(String PatientSex) {this.PatientSex = PatientSex;}
+
+    public Owner getOwnerOwnerCode() {return OwnerOwnerCode;}
+    public void setOwnerOwnerCode(Owner OwnerOwnerCode) { this.OwnerOwnerCode = OwnerOwnerCode;}
+
+    public Animal getAnimalAnimalCategory() {return AnimalAnimalCategory;}
+    public void setAnimalAnimalCategory(Animal AnimalAnimalCategory) {this.AnimalAnimalCategory = AnimalAnimalCategory;}
+
     public Patient() {
     }
 

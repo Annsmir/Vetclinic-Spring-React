@@ -24,6 +24,15 @@ public class Owner {
     @Column(name = "owner_telephone")
     private String OwnerTelephone;
 
+    public int getOwnerCode() {return OwnerCode;}
+    public void setOwnerCode(int OwnerCode) {this.OwnerCode = OwnerCode;}
+
+    public String getOwnerName() {return OwnerName;}
+    public void setOwnerName(String OwnerName) {this.OwnerName = OwnerName;}
+
+    public String getOwnerTelephone() {return OwnerTelephone;}
+    public void setOwnerTelephone(String OwnerTelephone) {this.OwnerTelephone = OwnerTelephone;}
+
     public Owner() {
     }
 

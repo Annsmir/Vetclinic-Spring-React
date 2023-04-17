@@ -2,8 +2,6 @@ package com.example.vet.controllers;
 
 import com.example.vet.entity.Visit;
 import com.example.vet.exception.VisitNotFoundException;
-import com.example.vet.repo.DoctorRepository;
-import com.example.vet.repo.PatientRepo;
 import com.example.vet.repo.VisitRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

@@ -13,6 +13,10 @@ import Patients from './pages/Patients';
 import AddPatient from './patients/AddPatient';
 import EditPatient from './patients/EditPatient';
 import ViewPatient from './patients/ViewPatient';
+import Owners from './pages/Owners';
+import AddOwner from './owners/AddOwner';
+import EditOwner from './owners/EditOwner';
+import ViewOwner from './owners/ViewOwner';
 
 function App() {
   return (
@@ -33,6 +37,11 @@ function App() {
           <Route exact path="add_patient" element={<AddPatient />} />
           <Route exact path='/editpatient/:id' element={<EditPatient/>} />
           <Route exact path="/view_patient/:id" element={<ViewPatient />} />
+
+          <Route exact path="/owners" element={<Owners/>} />
+          <Route exact path="add_owner" element={<AddOwner/>} />
+          <Route exact path='/editowner/:id' element={<EditOwner/>} />
+          <Route exact path="/view_owner/:id" element={<ViewOwner />} />
 
           <Route exact path="/auth" element={<Auth />} />
         </Routes>

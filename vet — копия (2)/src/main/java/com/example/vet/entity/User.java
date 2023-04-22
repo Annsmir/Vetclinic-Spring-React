@@ -6,7 +6,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.*;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.Size;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -42,7 +41,6 @@ public class User implements UserDetails {
     @Column(name = "surname", length = 128, nullable = false)
     private String surname;
 
-    @Size(max = 12)
     @Column(name = "phone")
     private String phone;
 

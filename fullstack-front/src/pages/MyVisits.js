@@ -30,7 +30,6 @@ export default function MyVisits() {
         <Table className="table table-success table-striped shadow">
           <thead>
             <tr>
-              <th scope="col">#</th>
               <th scope="col">Дата визита</th>
               <th scope="col">Пациент</th>
               <th scope="col">Доктор</th>
@@ -43,7 +42,6 @@ export default function MyVisits() {
               visits.map((visit, index) => {
                 if (currentUser.user.phone === visit.patient_PatientCode.ownerOwnerCode.ownerTelephone) {
                   return <tr>
-                    <th scope="row" key={index}>{index + 1}</th>
                     <td>{visit.visitDate}</td>
                     <td>{visit.patient_PatientCode.patientName}</td>
                     <td>{visit.doctor_DoctorCode.doctorName + " " + visit.doctor_DoctorCode.doctorSurname}</td>

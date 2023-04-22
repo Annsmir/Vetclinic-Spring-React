@@ -30,7 +30,6 @@ export default function MyPatients() {
         <Table className="table table-success table-striped shadow">
           <thead>
             <tr>
-              <th scope="col">#</th>
               <th scope="col">Кличка</th>
               <th scope="col">Номер карты</th>
               <th scope="col">Категория животного</th>
@@ -43,7 +42,6 @@ export default function MyPatients() {
               patients.map((patient, index) => {
               if (currentUser.user.phone === patient.ownerOwnerCode.ownerTelephone) {
                 return <tr>
-                    <th scope="row" key={index}>{index + 1}</th>
                     <td>{patient.patientName}</td>
                     <td>{patient.patientCardNumber}</td>
                     <td>{patient.animalAnimalCategory.animalCategoryName}</td>

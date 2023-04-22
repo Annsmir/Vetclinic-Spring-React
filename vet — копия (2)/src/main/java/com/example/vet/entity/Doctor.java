@@ -3,8 +3,8 @@ package com.example.vet.entity;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
-import javax.validation.Valid;
+import jakarta.persistence.*;
+import jakarta.validation.Valid;
 
 
 @Entity

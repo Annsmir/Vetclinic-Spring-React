@@ -3,9 +3,8 @@ package com.example.vet.entity;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
-import javax.print.Doc;
-import javax.validation.Valid;
+import jakarta.persistence.*;
+import jakarta.validation.Valid;
 
 @Entity
 @Table(name="visit")

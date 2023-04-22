@@ -51,7 +51,6 @@ export default function Owners() {
                         </tr>
                     </thead>
                     <tbody className="table-group-divider">
-
                         {
                             owners.filter((item) => {
                                 return search.toLowerCase() === ''

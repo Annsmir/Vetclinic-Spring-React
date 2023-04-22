@@ -22,27 +22,27 @@ const Register = () => {
 
   const onChangeName = (e) => {
     const name = e.target.value;
-    setName(name); // добавление нового объекта
+    setName(name);
   }
 
   const onChangeSurname = (e) => {
     const surname = e.target.value;
-    setSurname(surname); // добавление нового объекта
+    setSurname(surname);
   }
 
   const onChangeEmail = (e) => {
     const email = e.target.value;
-    setEmail(email); // добавление нового объекта
+    setEmail(email);
   }
 
   const onChangePhone = (e) => {
     const phone = e.target.value;
-    setPhone(phone); // добавление нового объекта
+    setPhone(phone);
   }
 
   const onChangePassword = (e) => {
     const password = e.target.value;
-    setPassword(password); // добавление нового объекта
+    setPassword(password);
   }
 
   const onSubmit = async (e) => {
@@ -112,7 +112,7 @@ const Register = () => {
                             </div>
                         </div>
                         <div className="col-sm-6 px-0 d-none d-sm-block">
-                            <img src={photo} alt="Login image" className="w-100 vh-100" style={{ objectFit: 'cover', objectPosition: 'left' }} />
+                            <img src={photo} alt="Login" className="w-100 vh-100" style={{ objectFit: 'cover', objectPosition: 'left' }} />
                         </div>
                     </div>
                 </div>

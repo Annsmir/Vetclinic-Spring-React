@@ -16,7 +16,7 @@ import Owners from './pages/Owners';
 import AddOwner from './owners/AddOwner';
 import EditOwner from './owners/EditOwner';
 import ViewOwner from './owners/ViewOwner';
-import React, {useEffect, useState} from "react";
+import React from "react";
 import Login from './auth/login';
 import Register from './auth/register';
 import Profile from './auth/profile';

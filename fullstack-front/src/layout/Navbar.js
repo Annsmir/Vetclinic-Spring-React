@@ -26,7 +26,6 @@ export default function Navbar() {
 
         window.location.reload();
     };
-    //   зачем это?
 
     return (
         <div>

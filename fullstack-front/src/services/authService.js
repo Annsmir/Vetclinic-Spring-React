@@ -4,7 +4,7 @@ const API_URL = "http://localhost:8090/";
 const register = (phone, name, surname, email, password) => {
   return axios.post(API_URL + "register", {
     phone,
-    name, 
+    name,
     surname,
     email,
     password
@@ -18,7 +18,7 @@ const login = (phone, password) => {
       password,
     })
     .then((response) => {
-        if (response.data.token) {
+      if (response.data.token) {
         console.log(response.token);
         localStorage.setItem("user", JSON.stringify(response.data));
       }

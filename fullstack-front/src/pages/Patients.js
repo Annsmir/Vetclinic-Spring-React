@@ -52,7 +52,6 @@ export default function Patients() {
             </tr>
           </thead>
           <tbody className="table-group-divider">
-
             {
               patients.filter((item) => {
                 return search.toLowerCase() === ''

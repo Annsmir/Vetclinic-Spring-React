@@ -3,7 +3,6 @@ import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
 import Table from 'react-bootstrap/Table';
 import Container from 'react-bootstrap/Container';
-import Footer from '../layout/Footer';
 import AuthService from '../services/authService';
 
 export default function MyPatients() {
@@ -37,7 +36,6 @@ export default function MyPatients() {
             </tr>
           </thead>
           <tbody className="table-group-divider">
-
             {
               patients.map((patient, index) => {
               if (currentUser.user.phone === patient.ownerOwnerCode.ownerTelephone) {

@@ -51,7 +51,6 @@ export default function Home() {
                         </tr>
                     </thead>
                     <tbody className="table-group-divider">
-
                         {
                             visits.filter((item) => {
                                 return search.toLowerCase() === ''

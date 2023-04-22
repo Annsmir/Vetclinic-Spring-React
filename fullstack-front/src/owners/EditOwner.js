@@ -61,7 +61,7 @@ const EditOwner = () => {
                 <label htmlFor='OwnerTelephone' className='form-label'>
                   Номер телефона
                 </label>
-                <input type={"text"} className='form-control' placeholder='8-ХХХ-ХХХ-ХХ-ХХ' name="ownerTelephone" value={formValues.ownerTelephone} onChange={handleInputChange} />
+                <input type={"text"} className='form-control' placeholder='8ХХХХХХХХХХ' name="ownerTelephone" value={formValues.ownerTelephone} onChange={handleInputChange} />
               </div>
 
               <button type='submit' className='btn btn-outline-success'>Готово</button>

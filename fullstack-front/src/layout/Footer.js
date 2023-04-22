@@ -39,10 +39,7 @@ export default function Footer () {
                                 Узнайте больше
                             </h6>
                             <p>
-                                <Link to="/patients" class="text-reset">Мои питомцы</Link>
-                            </p>
-                            <p>
-                                <Link to="/visits" class="text-reset">Записи в клинику</Link>
+                                <Link to="/contacts" class="text-reset">Наши контакты</Link>
                             </p>
                             <p>
                                 <Link to="/doctors" class="text-reset">Наши врачи</Link>
@@ -52,7 +49,7 @@ export default function Footer () {
                             </p>
                         </div>
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <h6 class="text-uppercase fw-bold mb-4">Связаться с нами</h6>
                             <p><FontAwesomeIcon icon={faBuilding} /> Волгоградский пр-т., д.8 стр. 3</p>
                             <p><FontAwesomeIcon icon={faMailBulk} /> vita-med@example.com</p>
                             <p><FontAwesomeIcon icon={faPhone} /> 8 499 198 30 76</p>

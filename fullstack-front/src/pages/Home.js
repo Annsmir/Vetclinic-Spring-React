@@ -40,7 +40,7 @@ export default function Home() {
                     <div class="container4">
                         <img src={icon3} alt="icon"></img>
                         <div class="title">Карточки питомца</div>
-                        <div class="details">Просматривайте и редактируйте карточки с информацией о Ваших питомцев</div>
+                        <div class="details">Просматривайте карточки с информацией о Ваших питомцах</div>
                     </div>
                 </div>
                 <div class="container3">
@@ -68,7 +68,7 @@ export default function Home() {
                     <div class="container4">
                         <img src={icon7} alt="icon"></img>
                         <div class="title">Ваш питомец - наш приоритет</div>
-                        <div class="details">Специлисты Vita Med найдут индивидуальный подход к каждому пациенту и его проблеме</div>
+                        <div class="details">Специлисты Vita Med позаботятся о комфорте и безопасноти вашего любимца</div>
                     </div>
                 </div>
                 <div class="container3">

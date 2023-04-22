@@ -23,6 +23,8 @@ import Profile from './auth/profile';
 import MyPatients from './pages/MyPatients';
 import MyVisits from './pages/MyVisits';
 import Contacts from './pages/Contacts';
+import ViewVisitUser from './visits/ViewVisit_user';
+import ViewPatientUser from './patients/ViewPatient_user';
 
 
 
@@ -38,6 +40,7 @@ const App = () => {
           <Route exact path="add_visit" element={<AddVisit />} />
           <Route exact path='/editvisit/:id' element={<EditVisit />} />
           <Route exact path="/view_visit/:id" element={<ViewVisit />} />
+          <Route exact path="/view_visit_user/:id" element={<ViewVisitUser />} />
 
           <Route exact path="/doctors" element={<Doctors />} />
           <Route exact path="/contacts" element={<Contacts />} />
@@ -46,6 +49,7 @@ const App = () => {
           <Route exact path="add_patient" element={<AddPatient />} />
           <Route exact path='/editpatient/:id' element={<EditPatient/>} />
           <Route exact path="/view_patient/:id" element={<ViewPatient />} />
+          <Route exact path="/view_patient_user/:id" element={<ViewPatientUser />} />
 
           <Route exact path="/owners" element={<Owners/>} />
           <Route exact path="add_owner" element={<AddOwner/>} />

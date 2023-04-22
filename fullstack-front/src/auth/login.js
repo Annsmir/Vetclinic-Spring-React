@@ -58,7 +58,7 @@ function Login() {
                                     <h3 className="fw-normal mb-3 pb-3" style={{ letterSpacing: '1px' }}>Вход в систему</h3>
                                     <div className="form-outline mb-4">
                                         <input  ref={phoneRef} onChange={(e) => setPhone(e.target.value)} required name="phone" value={phone} type="text" placeholder='Номер телефона' id="form2Example18" className="form-control form-control-lg" />
-                                        <label className="form-label" htmlFor="form2Example18">Номер телефона</label>
+                                        <label className="form-label" htmlFor="form2Example18">Логин / Номер телефона</label>
                                     </div>
                                     <div className="form-outline mb-4">
                                         <input onChange={(e) => setPassword(e.target.value)}required name="password" value={password} type="password" placeholder='Пароль' id="form2Example28" className="form-control form-control-lg" />

@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 
-export default function ViewPatient() {
+export default function ViewPatientUser() {
 
   const [patient, setPatient] = useState({
     patientName: "",
@@ -68,8 +68,7 @@ export default function ViewPatient() {
                 </ul>
               </div>
             </div>
-            <Link className='btn btn-success my-2' to={"/patients"}>Назад</Link>
-            <Link to={`/editpatient/${patient.patientCode}`} className="btn btn-outline-success mx-2">Редактировать</Link>
+            <Link className='btn btn-success m-4' to={"/my_patients"}>Назад</Link>
           </div>
         </div>
       </div>

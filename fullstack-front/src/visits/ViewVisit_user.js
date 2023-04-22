@@ -2,7 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 
-export default function ViewVisit() {
+export default function ViewVisitUser() {
 
     const [visit, setVisit] = useState({
         visitDate: "",
@@ -30,7 +30,7 @@ export default function ViewVisit() {
         <div>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-md-6 offset-md-3 border rounded p-4 mt-4 mb-4 shadow'>
+                    <div className='col-md-6 offset-md-3 border rounded p-4 mt-4 shadow mb-4'>
                         <h2 className='text-center m-4'>Просмотр визита</h2>
                         <div className='card'>
                             <div className='card-header'>
@@ -81,8 +81,7 @@ export default function ViewVisit() {
                                 </ul>
                             </div>
                         </div>
-                        <Link className='btn btn-success my-2' to={"/visits"}>Назад</Link>
-                        <Link to={`/editvisit/${visit.visitCode}`} className="btn btn-outline-success mx-2">Редактировать</Link>
+                        <Link className='btn btn-success m-4' to={"/my_visits"}>Назад</Link>
                     </div>
                 </div>
             </div>
